@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+<link rel="stylesheet" href="../css/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
@@ -21,43 +21,45 @@
       <div id="annual">Annually</div>
       <label id='toggle-switch'>
         <input type="checkbox" name="" id="">
-        <span class="slider"></span>
+        <span id="slider"></span>
       </label>
       <div id="month">Monthly</div>
     </div>
   </header>
-  <section id="basic" class='bundle-con'>
-    <ul>
-      <li>Basic</li>
-      <li class='month-price'>&dollar;19.99</li>
-      <li class="annual-price">&dollar;199.99</li>
-      <li>500 GB Storage</li>
-      <li>2 Users Allowed</li>
-      <li>Send up to 3 GB</li>
-      <li>Learn More</li>
-    </ul>
+  <section  id="basic" class='bundle-con'>
+      <ul >
+        <li>Basic</li>
+        <li class='month-price'><span class='sign'>&dollar;</span>19.99</li>
+        <li class="annual-price"><span class='sign'>&dollar;</span>199.99</li>
+        <li class='border'>500 GB Storage</li>
+        <li class='border'>2 Users Allowed</li>
+        <li class='border'>Send up to 3 GB</li>
+        <li class='learn-more'>Learn More</li>
+      </ul>
+  
   </section>
-  <section id="proffesional" class='bundle-con'>
-    <ul>
-      <li>Professional</li>
-      <li class='month-price'>&dollar;24.99</li>
-      <li class="annual-price">&dollar;249.99</li>
-      <li>1 TB Storage</li>
-      <li>5 Users Allowed</li>
-      <li>Send up to 10 GB</li>
-      <li>Learn More</li>
-    </ul>
+  <section id="proffesional" class='bundle-con' >
+      <ul >
+        <li>Professional</li>
+        <li class='month-price'><span class='sign'>&dollar;</span>24.99</li>
+        <li class="annual-price"><span class='sign'>&dollar;</span>249.99</li>
+        <li class='border'>1 TB Storage</li>
+        <li class='border'>5 Users Allowed</li>
+        <li class='border'>Send up to 10 GB</li>
+        <li>Learn More</li>
+      </ul>
   </section>
-  <section id="proffesional" class='bundle-con'>
-    <ul>
-      <li>Master</li>
-      <li class='month-price'>&dollar;39.99</li>
-      <li class="annual-price">&dollar;399.99</li>
-      <li>2 TB Storage</li>
-      <li>10 Users Allowed</li>
-      <li>Send up to 20 GB</li>
-      <li>Learn More</li>
-    </ul>
+  <section  class='bundle-con'>
+      <ul id="master">
+        <li>Master</li>
+        <li class='month-price'><span class='sign'>&dollar;</span>39.99</li>
+        <li class="annual-price"><span class='sign'>&dollar;</span>399.99</li>
+        <li class='border'>2 TB Storage</li>
+        <li class='border'>10 Users Allowed</li>
+        <li class='border'>Send up to 20 GB</li>
+        <li class='learn-more'>Learn More</li>
+      </ul>
+    
   </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
