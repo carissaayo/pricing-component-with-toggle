@@ -108,6 +108,7 @@ input:checked + #slider:before{
     border-radius: 10px;
     margin:40px 0;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .sign{
     font-size: 0.7em;
@@ -123,4 +124,49 @@ input:checked + #slider:before{
      margin:40px 0;
      text-transform: uppercase;
      color:hsl(233, 13%, 49%);
+}
+
+@media screen and (min-width:1440px){
+    body{
+        padding-top:100px;
+        background-image: url(../images/bg-bottom.svg),
+        url(../images/bg-top.svg);
+        background-position: 0 95%, 100% 0;
+        height:1000px;
+    }
+    h1{
+        font-size:3em;/* 45px */
+
+    }
+    #grid-con{
+        display: flex;
+        justify-content: center;
+    }
+    .bundle-con{
+        width:400px;
+        height: 600px;
+        margin:70px 0 0 0 ;
+
+    }
+    #proffesional{
+        height:630px;
+        margin-top:40px;
+        padding-top:30px;
+        color:white !important
+    }
+    #proffesional .month-price,
+    #proffesional .annual-price{
+        color:white
+    }
+    .learn-more{
+        background-image:linear-gradient(white,white);
+        color:hsl(237, 63%, 64%);
+        border:3px solid hsl(237, 63%, 64%)
+    }
+
+    #proffesional ul li:last-child{
+        background-color: inherit;
+        color:white;
+        border: 3px solid white;
+    }
 }
