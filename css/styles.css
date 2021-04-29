@@ -37,55 +37,38 @@ header{
     width:300px;
     align-items: center;
     margin:0px auto;
+    height:60px;
 }
-
-/* .switch-btn{
+#toggle-con h4{
+    margin-top: 20px;
+}
+.toggle{
+    opacity:0
+}
+.switch-btn{
     width:80px;
-    height: 40px;
-    background-color: green;
-    position: relative;
-    left: 800px; 
+    height:40px;
+    background-color: hsl(237, 63%, 64%);
+    position:relative;
     cursor: pointer;
-    box-shadow: inset 0 3px 10px rgba(0, 0, 0,.3);
     border-radius: 20px;
-    margin: 10px 40px;
-} */
-
-
-/* .switch-btn:before{
-    content:'';
-    position: absolute;
-    height: 36px;
-    width: 36px;
-    background:red;
-    left:2px;
-    top:2px;
+}
+.switch-btn::before{
+    content: '';
+position: absolute;
+height: 36px;
+width:36px;
+background-color: white;
+left:2px;
+top:2px;
+transition: all 150ms ease-out;
     border-radius: 50%;
-    transition: all 150ms ease-out;
-    box-shadow: 0 8px 6px -4px rgba(0, 0, 0, .25);
-}
-input[type=checkbox]:checked + .switch-btn:before{
-    left:42px;
-} */
 
-/* input[type=checkbox]:checked + .switch-btn{
-    background-color: rgb(100,255,100);
 }
-.switch{
-    display: flex;
-    margin-left: 600px;
-    text-align: center ;
-    padding-top:10px ;
-}
-.switch input{
-    opacity: 0.9
-/* hides the checkbox   */
-/* } */
-/* .btn-value{ 
-    padding-bottom:50px;
-    font-size: 3em;
-} */
 
+input[type=checkbox]:checked + .switch-btn::before{
+left: 42px;
+}  
 #grid-con{
     display: grid;
     grid-template-columns: repeat(3,minmax(300px,350px));
@@ -133,7 +116,9 @@ input[type=checkbox]:checked + .switch-btn:before{
 }
 .hide-annual ul */
 
-
+.hide{
+    display: none;
+}
 #master{
     grid-area: master;
 }
@@ -146,8 +131,10 @@ input[type=checkbox]:checked + .switch-btn:before{
     color: hsl(232, 13%, 33%);
 }
 #professional ul .month,#professional ul .annual{
-    color:white
-  
+ color:white  
+}
+.month p,.annual p{
+    display: inline-block;
 }
 
 .learn-more{
@@ -173,6 +160,13 @@ input[type=checkbox]:checked + .switch-btn:before{
 }
 
 @media screen and (max-width:1120px){
+    #toggle-con{
+        width: 60%;
+        
+    }
+    #toggle-con h4{
+        font-size: 2em;
+    }
     body{
 
        margin:0 auto;
@@ -204,7 +198,9 @@ input[type=checkbox]:checked + .switch-btn:before{
         height: 450px;
         margin:70px  auto ;
     }
-    #toggle-con{
-        width: 50%;
+     #toggle-con{
+        width: 80%;
+        
     }
+    
 }
